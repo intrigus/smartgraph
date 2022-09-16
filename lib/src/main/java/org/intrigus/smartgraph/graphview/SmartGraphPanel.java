@@ -1117,44 +1117,8 @@ public class SmartGraphPanel<V, E> extends Pane {
      *
      * @param <T> the type of the tuple
      */
-    private class Tuple<T> {
-
-        private final T first;
-        private final T second;
-
-        public Tuple(T first, T second) {
-            this.first = first;
-            this.second = second;
-        }
-
-        @Override
-        public int hashCode() {
-            int hash = 7;
-            hash = 29 * hash + Objects.hashCode(this.first);
-            hash = 29 * hash + Objects.hashCode(this.second);
-            return hash;
-        }
-
-        @Override
-        public boolean equals(Object obj) {
-            if (this == obj) {
-                return true;
-            }
-            if (obj == null) {
-                return false;
-            }
-            if (getClass() != obj.getClass()) {
-                return false;
-            }
-            final Tuple<?> other = (Tuple<?>) obj;
-            if (!Objects.equals(this.first, other.first)) {
-                return false;
-            }
-            if (!Objects.equals(this.second, other.second)) {
-                return false;
-            }
-            return true;
-        }
+    private record Tuple<T>(T first, T second) {
+    	
     }
 
 }
