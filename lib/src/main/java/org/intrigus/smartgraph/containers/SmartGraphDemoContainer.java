@@ -35,7 +35,7 @@ import javafx.scene.layout.HBox;
  */
 public class SmartGraphDemoContainer extends BorderPane {
 
-    public SmartGraphDemoContainer(SmartGraphPanel graphView) {
+    public SmartGraphDemoContainer(SmartGraphPanel<?,?> graphView) {
         
         setCenter(new ContentZoomPane(graphView));
         

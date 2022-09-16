@@ -322,7 +322,7 @@ public class GraphEdgeList<V, E> implements Graph<V, E> {
 
         @Override
         public Vertex<V>[] vertices() {
-            Vertex[] vertices = new Vertex[2];
+            Vertex<V>[] vertices = new Vertex[2];
             vertices[0] = vertexOutbound;
             vertices[1] = vertexInbound;
 
