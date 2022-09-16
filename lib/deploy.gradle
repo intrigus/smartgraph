@@ -29,6 +29,7 @@ publishing {
             pom {
                 name = 'smartgraph'
                 description = 'Generic (Java FX) Graph Visualization Library'
+                url = 'https://github.com/intrigus/smartgraph'
                 licenses {
                     license {
                         name = 'The MIT License'
@@ -44,7 +45,7 @@ publishing {
                 scm {
                     connection = 'scm:git:git://github.com/intrigus/smartgraph.git'
                     developerConnection = 'scm:git:ssh://github.com/intrigus/smartgraph.git'
-                    url = 'httsp://github.com/intrigus/smartgraph'
+                    url = 'https://github.com/intrigus/smartgraph'
                 }
             }
         }
