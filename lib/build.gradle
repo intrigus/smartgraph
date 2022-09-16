@@ -11,8 +11,14 @@ repositories {
     mavenCentral()
 }
 
- javafx {
-    version = "11.0.2"
+java {
+    toolchain {
+        languageVersion = JavaLanguageVersion.of(17)
+    }
+}
+
+javafx {
+    version = "17"
     modules = ["javafx.base", "javafx.graphics", "javafx.controls"]
 }
 
