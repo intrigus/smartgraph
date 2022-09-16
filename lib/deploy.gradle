@@ -2,7 +2,7 @@ apply plugin: 'maven-publish'
 apply plugin: 'signing'
 
 group = 'org.intrigus.smartgraph'
-version = '0.9.4'
+version = '0.9.5-SNAPSHOT'
 
 def repositoryUsername = project.hasProperty('MAVEN_USERNAME') ? MAVEN_USERNAME : ""
 
